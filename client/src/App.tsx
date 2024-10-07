@@ -1,9 +1,11 @@
+import Construction from "./pages/Construction";
+
 function App() {
 
   return (
-    <div>
-      working on it
-    </div>
+    <>
+      <Construction />
+    </>
   )
 }
 
