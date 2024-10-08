@@ -28,9 +28,9 @@ contract Talk {
     mapping(uint => Post) public posts;
     mapping(uint => mapping(uint => Comment)) public postToComment;
 
-    event CreatePost(uint postId, address author, string heading, string description, uint256 timestamp, uint256 likes, uint256 dislikes);
-    event CommentAdded(uint postId, uint commentId, address author, string comment, uint256 timestamp, uint256 likes, uint256 dislikes);
-    
+    event PostEvent(uint postId, address author, string heading, string description, uint256 timestamp, uint256 likes, uint256 dislikes);
+    event CommentEvent(uint postId, uint commentId, address author, string comment, uint256 timestamp, uint256 likes, uint256 dislikes);
+   
     function createPost(string memory _heading, string memory _description) public {
         posts[pId] = Post(
             pId,
@@ -44,7 +44,7 @@ contract Talk {
         );
         pId++;
 
-        emit CreatePost(pId, msg.sender, _heading, _description, block.timestamp, 0, 0);
+        emit PostEvent(pId, msg.sender, _heading, _description, block.timestamp, 0, 0);
     }
 
     function addComment(uint _postId, string memory _comment) public {
@@ -58,8 +58,9 @@ contract Talk {
         );
         posts[_postId].commentId++;
 
-        emit CommentAdded(_postId, posts[_postId].commentId, msg.sender, _comment, block.timestamp, 0, 0);
+        emit CommentEvent(_postId, posts[_postId].commentId, msg.sender, _comment, block.timestamp, 0, 0);
     }
+
 
     function deletePost(uint _postId) public onlyAuthorDeletePost(_postId) {
         delete posts[_postId];
@@ -75,6 +76,14 @@ contract Talk {
 
     function dislikePost(uint _postId) public {
         posts[_postId].dislikes++;
+    }
+
+    function likeComment(uint _postId, uint _commentId) public {
+        postToComment[_postId][_commentId].likes++;
+    }
+
+    function dislikeComment(uint _postId, uint _commentId) public {
+        postToComment[_postId][_commentId].dislikes++;
     }
 
     modifier onlyAuthorDeletePost(uint _postId) {
