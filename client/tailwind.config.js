@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        Pacifico: ['Pacifico', 'sans-serif'],
+        Bungee: ['Bungee', 'sans-serif'],
+      }
+    },
   },
   plugins: [],
 }

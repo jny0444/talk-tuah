@@ -10,9 +10,9 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/blockchain" element={<Blockchain />} />
-          <Route path="/rust" element={<Rust />} />
-          <Route path="/linux" element={<Linux />} />
+          <Route path="genre/blockchain" element={<Blockchain />} />
+          <Route path="genre/rust" element={<Rust />} />
+          <Route path="genre/linux" element={<Linux />} />
         </Routes>
       </Router>
     </>
