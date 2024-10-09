@@ -1,6 +1,11 @@
+import Header from '../../components/header'
+
 const Blockchain = () => {
   return (
-    <div>Blockchain</div>
+    <div>
+      <Header />
+      Blockchain
+    </div>
   )
 }
 

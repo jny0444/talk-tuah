@@ -11,11 +11,11 @@ const Home = () => {
           <h1 className='text-9xl text-center font-marker text-white select-none max-sm:scale-90'>Talk Tuah</h1>
           <p className='text-xl text-center font-pacifico text-white select-none max-sm:scale-90'>with Anon</p>
           <div className="flex flex-row gap-8 mt-20 max-sm:scale-90">
-            <Link to="genre/blockchain"><button className='bg-slate-900 px-6 py-2 text-lg text-white rounded-2xl hover:scale-110 duration-300 active:scale-100 ease-in-out select-none font-space font-semibold'>Blockchain <FontAwesomeIcon icon={faBitcoin} /></button></Link>
+            <Link to="genre/blockchain"><button className='bg-slate-900 px-6 py-2 text-lg text-white rounded-2xl hover:scale-110 duration-300 active:scale-100 ease-in-out select-none font-space font-semibold cursor-pointer'>Blockchain <FontAwesomeIcon icon={faBitcoin} /></button></Link>
           </div>
           <p className='text-white font-space font-bold text-xl select-none'>--// OR //--</p>
           <div className="flex flex-row gap-8 max-sm:scale-90">
-            <button className='bg-black px-6 py-2 text-lg text-white rounded-2xl hover:scale-110 duration-300 active:scale-100 ease-in-out select-none font-space font-bold'>Connect Wallet <FontAwesomeIcon icon={faWallet} /></button>
+            <button className='bg-black px-6 py-2 text-lg text-white rounded-2xl hover:scale-110 duration-300 active:scale-100 ease-in-out select-none font-space font-bold cursor-pointer'>Connect Wallet <FontAwesomeIcon icon={faWallet} /></button>
           </div>
         </div>
       </div>
