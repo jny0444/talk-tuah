@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const Home = () => {
   return (
       <div>
-        <img src="../src/assets/star.gif" className="fixed min-h-screen -z-10 object-cover"></img>
+        <img src="https://raw.githubusercontent.com/jny0444/talk-tuah/refs/heads/main/client/src/assets/star.gif" className="fixed min-h-screen -z-10 object-cover"></img>
         <div className="flex flex-col justify-center items-center backdrop-blur-md min-h-screen gap-8">
           <h1 className='text-9xl text-center font-Pacifico text-white select-none max-sm:scale-90'>Talk Twoah</h1>
           <p className='text-lg text-center font-Bungee text-white select-none max-sm:scale-90'>go talk 1+1 = 2ah</p>
