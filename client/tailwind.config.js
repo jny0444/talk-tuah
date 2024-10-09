@@ -7,8 +7,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        Pacifico: ['Pacifico', 'sans-serif'],
-        Bungee: ['Bungee', 'sans-serif'],
+        pacifico: ['Pacifico', 'sans-serif'],
+        marker: ['Permanent Marker', 'sans-serif'],
+        space: ['Space Mono', 'monospace'],
       }
     },
   },
