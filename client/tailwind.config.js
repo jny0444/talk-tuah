@@ -7,19 +7,6 @@ export default {
   ],
   theme: {
   	extend: {
-			animation: {
-        aurora: "aurora 60s linear infinite",
-      },
-			keyframes: {
-        aurora: {
-          from: {
-            backgroundPosition: "50% 50%, 50% 50%",
-          },
-          to: {
-            backgroundPosition: "350% 50%, 350% 50%",
-          },
-        },
-      },
   		fontFamily: {
 				pacifico: ['Pacifico', 'sans-serif'],
   			marker: ['Permanent Marker', 'sans-serif'],
@@ -34,17 +21,5 @@ export default {
   		colors: {}
   	}
   },
-	plugins: [addVariablesForColors],
   plugins: [require("tailwindcss-animate")],
-}
-
-function addVariablesForColors({ addBase, theme }) {
-  let allColors = flattenColorPalette(theme("colors"));
-  let newVars = Object.fromEntries(
-    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
-  );
-
-  addBase({
-    ":root": newVars,
-  });
 }
