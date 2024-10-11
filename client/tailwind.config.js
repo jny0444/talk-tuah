@@ -6,11 +6,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-  	extend: {
+    extend: {
   		fontFamily: {
-				pacifico: ['Pacifico', 'sans-serif'],
-  			marker: ['Permanent Marker', 'sans-serif'],
-  			space: ['Space Mono', 'monospace'],
+				wallet: ['Geologica', 'sans-serif'],
 				lexend: ['Lexend', 'sans-serif'],
   		},
   		borderRadius: {

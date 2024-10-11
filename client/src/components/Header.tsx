@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { faLink, faWallet } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Header = () => {
+
   const [pageSize, setPageSize] = useState<number | undefined>(undefined);
 
   useEffect(() => {
@@ -15,44 +17,37 @@ const Header = () => {
     return () => window.removeEventListener('resize', updatePageSize);
   }, []);
 
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
   if (pageSize !== undefined && pageSize < 768) {
     return (
-      <div>
-        <div className="flex flex-row justify-between items-center bg-gradient-to-r from-cyan-500 to-blue-600 px-10 py-6">
-          <Link to="/"><h1 className='text-3xl text-center font-pacifico text-white select-none'>Talk Tuah</h1></Link>
-          <div className="flex flex-col gap-1.5 cursor-pointer" onClick={toggleMenu}>
-            <div className={`h-1 w-8 bg-white transition-transform duration-300 ${isMenuOpen ? 'transform rotate-45 translate-y-3' : ''}`}></div>
-            <div className={`h-1 w-8 bg-white transition-opacity duration-300 ${isMenuOpen ? 'opacity-0' : ''}`}></div>
-            <div className={`h-1 w-8 bg-white transition-transform duration-300 ${isMenuOpen ? 'transform -rotate-45 -translate-y-2' : ''}`}></div>
-          </div>
+      <div className="flex flex-row justify-between items-center px-8 py-6">
+        <div className='flex flex-row gap-2 items-center'>
+          <img src="../../src/assets/TalkLogo.jpg" alt="Logo" className='h-12 rounded-xl select-none'/>
+          <h2 className='font-lexend text-xl font-semibold select-none leading-5'>Talk<br/>Tuah</h2>
         </div>
-        {isMenuOpen && (
-          <ul className={`absolute z-10 right-0 text-right space-y-4 mr-4 mt-4 backdrop-blur-md p-6 rounded-3xl border-2 border-gray-300 ${isMenuOpen ? 'opacity-100' : 'opacity-0'}`}>
-            <Link to="/"><li className='cursor-pointer select-none font-lexend font-semibold text-lg duration-200 px-3 py-1.5 rounded-lg hover:text-blue-600 active:scale-95'>Home</li></Link>
-            <li className='cursor-pointer select-none font-lexend font-semibold text-lg duration-200 px-3 py-1.5 rounded-lg hover:text-blue-600 active:scale-95'>About</li>
-            <li className='cursor-pointer select-none font-lexend font-semibold text-lg duration-200 px-3 py-1.5 rounded-lg hover:text-blue-600 active:scale-95'>Connect</li>
-          </ul>
-        )}
+        <button className="group/button relative inline-flex items-center justify-center overflow-hidden rounded-xl bg-black backdrop-blur-lg px-3 py-2 text-base font-semibold text-white transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:shadow-gray-600/50 border border-white/20">
+          <span className="text-lg font-space"><FontAwesomeIcon icon={faLink} /></span>
+          <div className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:[transform:skew(-13deg)_translateX(100%)]">
+            <div className="relative h-full w-10 bg-white/20"></div>
+          </div>
+        </button>
       </div>
-    );
+    )
   } else {
     return (
-      <div className="flex flex-row justify-between items-center bg-gradient-to-r from-cyan-500 to-blue-600 px-14 py-6">
-        <Link to="/"><h1 className='text-3xl text-center font-pacifico text-white select-none'>Talk Tuah</h1></Link>
-        <ul className="flex flex-row justify-between items-center gap-8">
-          <Link to="/"><li className='cursor-pointer select-none text-white font-lexend font-semibold text-lg duration-200 px-3 py-1.5 rounded-lg hover:bg-white hover:text-blue-600 active:scale-95'>Home</li></Link>
-          <li className='cursor-pointer select-none text-white font-lexend font-semibold text-lg duration-200 px-3 py-1.5 rounded-lg hover:bg-white hover:text-blue-600 active:scale-95'>About</li>
-          <li className='cursor-pointer select-none text-white font-lexend font-semibold text-lg duration-200 px-3 py-1.5 rounded-lg hover:bg-white hover:text-blue-600 active:scale-95'>Connect</li>
-        </ul>
+      <div className="flex flex-row justify-between items-center px-16 py-8">
+        <div className='flex flex-row gap-6 items-center'>
+          <img src="../../src/assets/TalkLogo.jpg" alt="Logo" className='h-16 rounded-xl select-none'/>
+          <h2 className='font-lexend text-3xl font-semibold select-none'>Talk Tuah</h2>
+        </div>
+        <button className="group/button relative inline-flex items-center justify-center overflow-hidden rounded-md bg-black backdrop-blur-lg px-6 py-2 text-base font-semibold text-white transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:shadow-gray-600/50 border border-white/20">
+          <span className="text-lg font-wallet">Connect Wallet <FontAwesomeIcon icon={faWallet} /></span>
+          <div className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:[transform:skew(-13deg)_translateX(100%)]">
+            <div className="relative h-full w-10 bg-white/20"></div>
+          </div>
+        </button>
       </div>
-    );
+    )
   }
-};
+}
 
-export default Header;
+export default Header
