@@ -8,7 +8,7 @@ export default {
   theme: {
     extend: {
   		fontFamily: {
-				wallet: ['Geologica', 'sans-serif'],
+				wallet: ['Karla', 'sans-serif'],
 				lexend: ['Lexend', 'sans-serif'],
   		},
   		borderRadius: {

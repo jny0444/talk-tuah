@@ -16,7 +16,7 @@ const Home = () => {
             <h3 className='text-center font-lexend font-medium text-3xl text-gray-500'>Connect to Sepolia Testnet through Metamask</h3>
             <h3 className='text-center font-lexend font-medium text-3xl text-gray-500'>and post <SparklesText text="Anonymously" className='text-center text-black font-lexend font-medium text-3xl inline'/></h3>
           </div>
-          <a href="https://github.com/jny0444/talk-tuah" target='_blank'><ShinyButton className='bg-black text-white'>Check Out Repo <FontAwesomeIcon icon={faGithub} /></ShinyButton></a>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target='_blank'><ShinyButton className='bg-black text-white'>Check Out Repo <FontAwesomeIcon icon={faGithub} /></ShinyButton></a>
         </div>
         <div></div>
         <div></div>
