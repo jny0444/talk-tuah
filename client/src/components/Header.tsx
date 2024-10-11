@@ -21,7 +21,7 @@ const Header = () => {
     return (
       <div className="flex flex-row justify-between items-center px-8 py-6">
         <div className='flex flex-row gap-2 items-center'>
-          <img src="../../src/assets/TalkLogo.jpg" alt="Logo" className='h-12 rounded-xl select-none'/>
+          <img src="https://raw.githubusercontent.com/jny0444/talk-tuah/refs/heads/main/client/src/assets/TalkLogo.jpg" alt="Logo" className='h-12 rounded-xl select-none'/>
           <h2 className='font-lexend text-xl font-semibold select-none leading-5'>Talk<br/>Tuah</h2>
         </div>
         <button className="group/button relative inline-flex items-center justify-center overflow-hidden rounded-xl bg-black backdrop-blur-lg px-3 py-2 text-base font-semibold text-white transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:shadow-gray-600/50 border border-white/20">
@@ -36,7 +36,7 @@ const Header = () => {
     return (
       <div className="flex flex-row justify-between items-center px-16 py-8">
         <div className='flex flex-row gap-6 items-center'>
-          <img src="../../src/assets/TalkLogo.jpg" alt="Logo" className='h-16 rounded-xl select-none'/>
+          <img src="https://raw.githubusercontent.com/jny0444/talk-tuah/refs/heads/main/client/src/assets/TalkLogo.jpg" alt="Logo" className='h-16 rounded-xl select-none'/>
           <h2 className='font-lexend text-3xl font-semibold select-none'>Talk Tuah</h2>
         </div>
         <button className="group/button relative inline-flex items-center justify-center overflow-hidden rounded-md bg-black backdrop-blur-lg px-6 py-2 text-base font-semibold text-white transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:shadow-gray-600/50 border border-white/20">
