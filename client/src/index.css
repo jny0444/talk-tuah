@@ -11,6 +11,6 @@
 }
 
 .background {
-  min-height: 100vh;
+  min-height: 100dvh;
   background: linear-gradient(to top right, #ffffff , #fff, #ffeeeec6, #fff7e6c0, #e6f7ffc2, #e6e6ffcb, #f9e6ffdd, #ffffff, #fff );
 }
