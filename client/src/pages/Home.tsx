@@ -40,15 +40,15 @@ const Home = () => {
           </div>
             <div className='grid grid-cols-3 max-2xl:scale-[.65] max-2xl:gap-[30rem] max-lg:gap-16 max-lg:grid-cols-1 justify-items-center max-2xl:-mt-[8dvh] max-lg:-mt-[20dvh]'>
             <div className='relative'>
-              <img src="../../src/assets/Blockchain.gif" alt="" className='z-10 min-w-[30rem] max-sm:min-w-80 max-h-[30rem] max-md:max-h-80 object-cover rounded-[3rem] cursor-pointer border-8 border-gray-200 hover:shadow-2xl duration-300 ease-in-out'/>
+              <img src="https://raw.githubusercontent.com/jny0444/talk-tuah/refs/heads/main/client/src/assets/Blockchain.gif" alt="" className='z-10 min-w-[30rem] max-sm:min-w-80 max-h-[30rem] max-md:max-h-80 object-cover rounded-[3rem] cursor-pointer border-8 border-gray-200 hover:shadow-2xl duration-300 ease-in-out'/>
               <h3 className='absolute top-40 max-md:top-20 text-3xl font-lexend text-gray-300 backdrop-blur-xl ml-2 pl-20 max-sm:pl-10 max-sm:pr-[6.65rem] pr-[14.15rem] py-10'>Blockchain</h3>
             </div>
             <div className='relative'>
-              <img src="../../src/assets/Shet.gif" alt="" className='z-10 min-w-[30rem] max-sm:min-w-80 max-h-[30rem] max-md:max-h-80 object-cover rounded-[3rem] cursor-pointer border-8 border-gray-200 hover:shadow-2xl duration-300 ease-in-out'/>
+              <img src="https://raw.githubusercontent.com/jny0444/talk-tuah/refs/heads/main/client/src/assets/Shet.gif" alt="" className='z-10 min-w-[30rem] max-sm:min-w-80 max-h-[30rem] max-md:max-h-80 object-cover rounded-[3rem] cursor-pointer border-8 border-gray-200 hover:shadow-2xl duration-300 ease-in-out'/>
               <h3 className='absolute top-40 max-md:top-20 text-3xl font-lexend text-gray-300 backdrop-blur-xl ml-2 pl-20 max-sm:pl-10 max-sm:pr-[5.6rem] pr-[13.1rem] py-10'>Shetposting</h3>
             </div>
             <div className='relative'>
-              <img src="../../src/assets/Political.gif" alt="" className='z-10 min-w-[30rem] max-sm:min-w-80 max-h-[30rem] max-md:max-h-80 object-cover rounded-[3rem] cursor-pointer border-8 border-gray-200 hover:shadow-2xl duration-300 ease-in-out'/>
+              <img src="https://raw.githubusercontent.com/jny0444/talk-tuah/refs/heads/main/client/src/assets/Political.gif" alt="" className='z-10 min-w-[30rem] max-sm:min-w-80 max-h-[30rem] max-md:max-h-80 object-cover rounded-[3rem] cursor-pointer border-8 border-gray-200 hover:shadow-2xl duration-300 ease-in-out'/>
               <h3 className='absolute top-40 max-md:top-20 text-3xl font-lexend text-gray-300 backdrop-blur-xl ml-2 pl-20 max-sm:pl-10 max-sm:pr-[9.3rem] pr-[16.8rem] py-10'>Political</h3>
             </div>
             </div>
