@@ -25,6 +25,7 @@ const Home = () => {
             <GradualSpacing text="Go Tawk 1+1 = 2ah" className='text-center font-lexend font-medium text-8xl max-lg:text-6xl max-md:text-4xl'/>
             <GradualSpacing text="on Web3" className='text-center font-lexend font-medium text-8xl max-lg:text-6xl max-md:text-4xl' duration={0.9} delayMultiple={0.1}/>
           </div>
+
           <div className='space-y-1'>
             <h3 className='text-center font-lexend font-medium text-3xl text-gray-500 max-md:text-lg'>Connect to <span className='text-black'>Sepolia Testnet</span></h3>
             <h3 className='text-center font-lexend font-medium text-3xl text-gray-500 max-md:text-lg'>through <span className='text-black'>Metamask</span></h3>
