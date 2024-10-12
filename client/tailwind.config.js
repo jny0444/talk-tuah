@@ -8,7 +8,7 @@ export default {
   theme: {
     extend: {
   		fontFamily: {
-				wallet: ['Karla', 'sans-serif'],
+				wallet: ['DM Mono', 'sans-serif'],
 				lexend: ['Lexend', 'sans-serif'],
   		},
   		borderRadius: {
