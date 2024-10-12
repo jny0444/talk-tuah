@@ -27,6 +27,7 @@ const Home = () => {
       <div className='flex flex-col'>
         <div className='flex flex-col items-center justify-center gap-8 select-none mt-[20dvh]'>
           <GradualSpacing text="Go Talk 1+1 = 2ah" className='text-center font-lexend font-medium text-8xl max-lg:text-6xl max-md:text-4xl'/>
+          <GradualSpacing text="on Web3" className='text-center font-lexend font-medium text-8xl max-lg:text-6xl max-md:text-4xl -mt-10' duration={0.9} delayMultiple={0.1}/>
           <div className='space-y-1'>
             <h3 className='text-center font-lexend font-medium text-3xl text-gray-500 max-md:text-lg'>Connect to <span className='text-black'>Sepolia Testnet</span></h3>
             <h3 className='text-center font-lexend font-medium text-3xl text-gray-500 max-md:text-lg'>through <span className='text-black'>Metamask</span></h3>
@@ -54,7 +55,7 @@ const Home = () => {
             </div>
         </div>
         <div className='flex flex-col justify-center text-center mt-[30dvh] mb-10 space-y-8 max-lg:mt-[-15dvh] max-sm:scale-[0.85] select-none'>
-          <h2 className='font-lexend text-4xl select-none max-md:text-xl'>Made with <FontAwesomeIcon icon={faBitcoin} /> by</h2>
+          <h2 className='font-lexend text-4xl select-none max-md:text-xl'>Made on <FontAwesomeIcon icon={faBitcoin} /> by</h2>
           <div className='flex flex-row justify-center gap-20 max-lg:gap-10 max-md:flex-col max-md:items-center'>
             <a href="">
               <div className='flex flex-row items-center gap-4 bg-black px-4 py-3 rounded-xl text-white hover:scale-105 duration-200 ease-in-out'>
