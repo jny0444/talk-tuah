@@ -25,7 +25,6 @@ const Home = () => {
             <GradualSpacing text="Go Tawk 1+1 = 2ah" className='text-center font-lexend font-medium text-8xl max-lg:text-6xl max-md:text-4xl'/>
             <GradualSpacing text="on Web3" className='text-center font-lexend font-medium text-8xl max-lg:text-6xl max-md:text-4xl' duration={0.9} delayMultiple={0.1}/>
           </div>
-
           <div className='space-y-1'>
             <h3 className='text-center font-lexend font-medium text-3xl text-gray-500 max-md:text-lg'>Connect to <span className='text-black'>Sepolia Testnet</span></h3>
             <h3 className='text-center font-lexend font-medium text-3xl text-gray-500 max-md:text-lg'>through <span className='text-black'>Metamask</span></h3>
@@ -34,9 +33,9 @@ const Home = () => {
           <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target='_blank'><button className='font-lexend text-xl px-6 py-2.5 rounded-md duration-300 hover:shadow-xl hover:scale-105 active:scale-100 max-md:text-lg bg-black text-white'>Check Out Repo<span className='[word-spacing:0.2rem]'> <FontAwesomeIcon icon={faGithub} /></span></button></a>
         </div>
       </div>
-      <div className='flex flex-col justify-center items-center'>
+      <div className='flex flex-col justify-center items-center select-none'>
         <div className='flex flex-col items-center'>
-          <h3 className='text-center font-lexend font-medium text-7xl max-lg:text-5xl max-md:text-3xl text-black'>Boards</h3>
+          <h3 className='text-center font-lexend font-medium text-7xl max-lg:text-5xl max-md:text-4xl text-black max-[480px]:mb-10 max-[990px]:mb-16'>Boards</h3>
         </div>
         <div className='grid grid-cols-3 gap-10 max-[990px]:grid-cols-1'>
           <Card image='https://raw.githubusercontent.com/jny0444/talk-tuah/refs/heads/main/client/src/assets/Blockchain.gif' title='Blockchain'/>
