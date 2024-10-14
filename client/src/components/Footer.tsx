@@ -3,7 +3,7 @@ import { faEthereum } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   return (
-    <div className='flex flex-col gap-6 items-center bg-black py-10 select-none'>
+    <div className='flex flex-col gap-6 items-center bg-gradient-to-b from-black to-gray-900 py-10 select-none'>
       <h2 className='font-lexend text-white text-2xl max-md:text-xl'>Made with <FontAwesomeIcon icon={faEthereum} /> by</h2>
       <div className='flex flex-row gap-12'>
         <div className='flex flex-row gap-2 items-center'>
