@@ -10,7 +10,7 @@ interface CardProps {
 export function Card({ image, title }: CardProps) {
   return (
     <CardContainer className="inter-var max-[1600px]:max-w-96 max-xl:max-w-80 max-[1300px]:max-w-80 max-[1080px]:max-w-72 max-[990px]:max-w-96">
-      <CardBody className="bg-gray-200 backdrop-blur-xl relative group/card  dark:hover:shadow-2xl  dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] max-sm:min-w-96 max-[990px]:-my-16 max-md:scale-95 max-[480px]:scale-[0.80] max-[480px]:-my-28 h-auto rounded-xl p-6 border">
+      <CardBody className="bg-gray-200 backdrop-blur-xl relative group/card  dark:hover:shadow-2xl  dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] max-sm:min-w-96 max-[990px]:-my-20 max-md:scale-95 max-[480px]:scale-[0.80] max-[480px]:-my-32 h-auto rounded-xl p-6 border">
         <CardItem
           translateZ="50"
           src={image}

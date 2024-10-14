@@ -46,13 +46,13 @@ const Home = () => {
           <h3 className='text-center font-lexend font-medium text-7xl max-lg:text-5xl max-md:text-[2.8rem] text-black max-[480px]:mb-10 max-[990px]:mb-16'>Boards</h3>
         </div>
         <div className='grid grid-cols-3 gap-10 max-[990px]:grid-cols-1'>
-          <Link to="/blockchain">
+          <Link to="/boards/blockchain">
             <Card image='https://raw.githubusercontent.com/jny0444/talk-tuah/refs/heads/main/client/src/assets/Blockchain.gif' title='Blockchain'/>
           </Link>
-          <Link to="/shetposting">
+          <Link to="/boards/shetposting">
             <Card image='https://raw.githubusercontent.com/jny0444/talk-tuah/refs/heads/main/client/src/assets/Shet.gif' title='Shetposting'/>
           </Link>
-          <Link to="/political">
+          <Link to="/boards/political">
             <Card image='https://raw.githubusercontent.com/jny0444/talk-tuah/refs/heads/main/client/src/assets/Political.gif' title='Political'/>
           </Link>
         </div>
