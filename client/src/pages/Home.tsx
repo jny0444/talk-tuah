@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import Header from '@/components/Header';
+import About from '@/components/About';
 import { Card } from '@/components/Card';
 import Footer from '@/components/Footer';
 
@@ -41,11 +42,12 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div id='boards' className='flex flex-col justify-center items-center select-none pt-20'>
+      <About/>
+      <div id='boards' className='flex flex-col justify-center items-center select-none pt-14'>
         <div className='flex flex-col items-center'>
           <h3 className='text-center font-lexend font-medium text-7xl max-lg:text-5xl max-md:text-[2.8rem] text-black max-[480px]:mb-10 max-[990px]:mb-16'>Boards</h3>
         </div>
-        <div className='grid grid-cols-3 gap-10 max-[990px]:grid-cols-1'>
+        <div className='grid grid-cols-3 gap-10 max-[990px]:grid-cols-1 justify-items-center'>
           <Link to="/boards/blockchain">
             <Card image='https://raw.githubusercontent.com/jny0444/talk-tuah/refs/heads/main/client/src/assets/Blockchain.gif' title='Blockchain'/>
           </Link>
