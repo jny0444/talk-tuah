@@ -37,8 +37,8 @@ const Home = () => {
           <h2 className='font-lexend text-gray-500 text-lg min-[600px]:text-2xl md:text-3xl xl:text-4xl'>and post <SparklesText text="Anonymously" className='text-black font-lexend font-normal inline text-lg min-[600px]:text-2xl md:text-3xl xl:text-4xl'/></h2>
         </div>
         <div className='flex flex-col items-center gap-5 md:flex-row md:gap-10'>
-          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target='_blank'><button className='font-lexend bg-black text-white px-3 py-2 rounded-md hover:scale-105 active:scale-95 duration-300 ease-in-out min-[600px]:text-lg xl:text-xl xl:px-4 xl:py-3'>Check Out Repo<span className='[word-spacing:0.2rem]'> <FontAwesomeIcon icon={faGithub} /></span></button></a>
-          <a href="#boards"><button className='font-lexend bg-black text-white px-3 py-2 rounded-md hover:scale-105 active:scale-95 duration-300 ease-in-out min-[600px]:text-lg xl:text-xl xl:px-4 xl:py-3'>Continue to Boards<span className='[word-spacing:0.3rem]'> <FontAwesomeIcon icon={faNewspaper} /></span></button></a>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target='_blank'><button className='font-lexend bg-black text-white px-3 py-2 rounded-xl hover:scale-105 active:scale-95 duration-300 ease-in-out min-[600px]:text-lg xl:text-xl xl:px-4 xl:py-3'>Check Out Repo<span className='[word-spacing:0.2rem]'> <FontAwesomeIcon icon={faGithub} /></span></button></a>
+          <a href="#boards"><button className='font-lexend bg-black text-white px-3 py-2 rounded-xl hover:scale-105 active:scale-95 duration-300 ease-in-out min-[600px]:text-lg xl:text-xl xl:px-4 xl:py-3'>Continue to Boards<span className='[word-spacing:0.3rem]'> <FontAwesomeIcon icon={faNewspaper} /></span></button></a>
         </div>
       </div>
       <About />
