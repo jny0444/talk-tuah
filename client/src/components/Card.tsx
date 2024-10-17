@@ -9,18 +9,18 @@ interface CardProps {
 
 export function Card({ image, title }: CardProps) {
   return (
-    <CardContainer className="inter-var max-[1600px]:max-w-96 max-xl:max-w-80 max-[1300px]:max-w-80 max-[1080px]:max-w-72 max-[990px]:max-w-96">
-      <CardBody className="bg-gray-200 backdrop-blur-xl relative group/card  dark:hover:shadow-2xl  dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] max-sm:min-w-96 max-[990px]:-my-20 max-md:scale-95 max-[480px]:scale-[0.80] max-[480px]:-my-32 h-auto rounded-xl p-6 border">
+    <CardContainer className="inter-var">
+      <CardBody className="bg-gray-200 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] max-w-72 max-h-80 md:max-w-96 rounded-xl p-6 border lg:max-w-72 min-[1160px]:max-w-80 min-[1240px]:max-w-[22rem] xl:max-w-96 xl:max-h-96">
         <CardItem
-          translateZ="50"
+          translateZ="30"
           src={image}
           rotateZ={0}
-          className="w-full mt-4"
+          className="w-full mt-3"
         >
           <img
             src={image}
-            className="h-72 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-            alt="thumbnail"
+            className="h-48 xl:h-64 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+            alt={title}
           />
         </CardItem>
         <div className="flex justify-between items-center mt-6 cursor-pointer">
