@@ -19,7 +19,7 @@ const Header = () => {
 
   if (pageSize !== undefined && pageSize < 768) {
     return (
-      <div className="flex flex-row justify-between items-center px-8 py-6">
+      <div className="flex flex-row justify-between items-center px-4 py-5">
         <div className='flex flex-row gap-2 items-center'>
           <img src="https://raw.githubusercontent.com/jny0444/talk-tuah/refs/heads/main/client/src/assets/TalkLogo.jpg" alt="Logo" className='h-12 rounded-xl select-none'/>
           <h2 className='font-lexend text-xl font-semibold select-none leading-5'>Tawk<br/>Twoah</h2>
