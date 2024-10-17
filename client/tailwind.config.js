@@ -8,7 +8,13 @@ export default {
   theme: {
     extend: {
   		fontFamily: {
+				wallet: ['DM Mono', 'sans-serif'],
 				lexend: ['Lexend', 'sans-serif'],
+  		},
+  		borderRadius: {
+				lg: 'var(--radius)',
+  			md: 'calc(var(--radius) - 2px)',
+  			sm: 'calc(var(--radius) - 4px)'
   		},
   		colors: {}
   	}
