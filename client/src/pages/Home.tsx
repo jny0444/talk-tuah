@@ -22,6 +22,8 @@ const Home = () => {
     };
   }, []);
 
+  //Hello
+
   return (
     <div className='background space-y-56 max-2xl:space-y-52 max-xl:space-y-48 max-lg:space-y-44 max-md:space-y-36 max-sm:space-y-24'>
       <Header/>
