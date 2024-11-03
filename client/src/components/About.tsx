@@ -3,7 +3,7 @@ import Spline from '@splinetool/react-spline';
 const About = () => {
   return (
     <div className='relative'>
-      <Spline scene="https://prod.spline.design/Tu37aCxLmALVRj-t/scene.splinecode" className='absolute -z-20'/>
+      <Spline scene="https://prod.spline.design/Tu37aCxLmALVRj-t/scene.splinecode" className='absolute -z-10'/>
       <div className='absolute -z-10 bg-white w-36 h-10 bottom-4 right-4 rounded-xl'></div>
       <div className="flex flex-col items-center gap-8 py-20 px-10 p-5 rounded-xl md:px-20 lg:px-36 xl:gap-16 xl:px-52 xl:py-40">
         <h3 className="font-lexend text-4xl xl:text-5xl backdrop-blur-md bg-neutral-50/20 px-4 py-2 rounded-2xl">About</h3>
