@@ -1,0 +1,12 @@
+##+TITLE: Things to be added
+
+* To be done
+  Implement IPFS and tRPC; 
+  Deploy a subgraph that listens to events for Postscreated and Comments created
+  Use GraphQL in tRPC to fetch the posts
+
+* TODO 
+- [ ] Implement IPFS and tRPC
+- [ ] Deploy a subgraph that listens to events for Postscreated and Comments created
+- [ ] Use GraphQL in tRPC to fetch the posts
+
