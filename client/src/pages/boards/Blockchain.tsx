@@ -1,9 +1,22 @@
-const Blockchain = () => {
-  return (
-    <div className='background'>
-      Blockchain
-    </div>
-  )
-}
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import { GetAllPosts } from "@/hooks/useContractRead";
+import { SubmitPost } from "@/hooks/useContractWrite";
 
-export default Blockchain
+const Blockchain = () => {
+  // const [posts, setPosts] = useState([]);
+
+  return (
+    <div className="background">
+      <Header />
+      <div className="text-black p-4">
+        Blockchain
+        <SubmitPost />
+      </div>
+      <GetAllPosts />
+      <Footer />
+    </div>
+  );
+};
+
+export default Blockchain;
