@@ -71,12 +71,23 @@ contract Talk {
         emit CommentEvent(_postId, cId, msg.sender, _comment, block.timestamp);
     }
 
-    function getAllPosts() public view returns (Post[] memory) {
-        Post[] memory allPosts = new Post[](postIds.length);
+    function getAllPosts(PostType _postType) public view returns (Post[] memory) {
+        uint256 count = 0;
         for (uint256 i = 0; i < postIds.length; i++) {
-            allPosts[i] = posts[postIds[i]];
+            if (posts[postIds[i]].postType == _postType) {
+                count++;
+            }
         }
-        return allPosts;
+
+        Post[] memory filteredPosts = new Post[](count);
+        uint256 index = 0;
+        for (uint256 i = 0; i < postIds.length; i++) {
+            if (posts[postIds[i]].postType == _postType) {
+                filteredPosts[index] = posts[postIds[i]];
+                index++;
+            }
+        }
+        return filteredPosts;
     }
 
     function getComments(bytes32 _postId) public view returns (Comment[] memory) {
