@@ -1,24 +1,36 @@
-import { useReadContract } from "wagmi";
+import { useChainId, useReadContract } from "wagmi";
 import { wagmiContractConfig } from "@/constants/wagmiConfig";
 
 function GetAllPosts() {
+  const chainId = useChainId();
+  console.log("Chain ID:", chainId);
+
   const {
     data: posts,
     isLoading,
     isError,
+    error,
   } = useReadContract({
     ...wagmiContractConfig,
-    functionName: "getPost", // Make sure this matches your contract
+    functionName: "getAllPosts",
+    args: [],
   });
 
-  if (isLoading) return (<div>Loading...</div>);
-  if (isError || !Array.isArray(posts)) return <div>No posts found</div>;
+  console.log("Posts data:", posts);
+  console.log("Is loading:", isLoading);
+  console.log("Is error:", isError);
+  console.log("Error:", error);
+
+  if (isLoading) return <div>Loading...</div>;
+  if (isError) return <div>Error: {error?.message || "An error occurred"}</div>;
+  if (!posts || !Array.isArray(posts) || posts.length === 0)
+    return <div>No posts found</div>;
 
   return (
     <>
       {posts.map((post: any) => (
-        <div key={post.id} className="p-4 border-b">
-          <h2>{post.title}</h2>
+        <div key={post.postId} className="p-4 border-b">
+          <h2>{post.heading}</h2>
           <p>{post.description}</p>
         </div>
       ))}

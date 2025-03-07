@@ -1,22 +1,24 @@
 import abi from "@/constants";
-import { useWriteContract } from "wagmi";
-import dotenv from "dotenv";
-
-dotenv.config();
+import { useWriteContract, useAccount } from "wagmi";
 
 export function SubmitPost() {
+  const { isConnected } = useAccount();
   const { writeContract } = useWriteContract();
+
+  if (!isConnected) {
+    return <div>Please connect your wallet</div>;
+  }
 
   async function submit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
-    const formData = new FormData(e.currentTarget);
-    const heading = formData.get("heading") as string;
-    const content = formData.get("content") as string;
+    const formData = new FormData(e.target as HTMLFormElement);
+    const heading = formData.get("title") as string;
+    const content = formData.get("description") as string;
     const postType = 0;
 
     writeContract({
-      address: `0x${import.meta.env.CONTRACT_ADDRESS}`,
+      address: import.meta.env.VITE_CONTRACT_ADDRESS,
       abi: abi,
       functionName: "createPost",
       args: [heading, content, BigInt(postType)],
@@ -58,7 +60,7 @@ export function SubmitPost() {
 //     const postType = 0;
 
 //     writeContract({
-//       address: `0x${import.meta.env.CONTRACT_ADDRESS}`,
+//       address: import.meta.env.CONTRACT_ADDRESS,
 //       abi: abi,
 //       functionName: "createPost",
 //       args: [heading, content, BigInt(postType)],
@@ -87,4 +89,3 @@ export function SubmitPost() {
 //     </form>
 //   );
 // }
-
