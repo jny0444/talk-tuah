@@ -11,7 +11,7 @@ const Blockchain = () => {
       <Header />
       <div className="text-black p-4">
         Blockchain
-        <SubmitPost />
+        <SubmitPost postType={0}/>
       </div>
       <GetAllPosts />
       <Footer />
