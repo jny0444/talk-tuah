@@ -22,7 +22,7 @@ const Header = () => {
   if (pageSize !== undefined && pageSize < 768) {
     return (
       <div className="flex flex-row justify-between items-center px-4 py-5">
-        <div className="flex flex-row gap-2 items-center">
+        <a href="/" className="flex flex-row gap-2 items-center">
           <img
             src="https://raw.githubusercontent.com/jny0444/talk-tuah/refs/heads/main/client/src/assets/TalkLogo.jpg"
             alt="Logo"
@@ -33,7 +33,7 @@ const Header = () => {
             <br />
             Twoah
           </h2>
-        </div>
+        </a>
         <button className="group/button relative inline-flex items-center justify-center overflow-hidden rounded-xl bg-black backdrop-blur-lg px-3 py-2 text-base font-semibold text-white transition-all duration-300 ease-in-out hover:scale-105 active:scale-100 hover:shadow-xl hover:shadow-gray-600/50 border border-white/20">
           <span className="text-lg font-space">
             <FontAwesomeIcon icon={faLink} />
@@ -47,7 +47,7 @@ const Header = () => {
   } else {
     return (
       <div className="flex flex-row justify-between items-center px-16 py-8">
-        <div className="flex flex-row gap-6 items-center">
+        <a href="/" className="flex flex-row gap-6 items-center">
           <img
             src="https://raw.githubusercontent.com/jny0444/talk-tuah/refs/heads/main/client/src/assets/TalkLogo.jpg"
             alt="Logo"
@@ -56,7 +56,7 @@ const Header = () => {
           <h2 className="font-lexend text-3xl font-semibold select-none">
             Tawk Twoah
           </h2>
-        </div>
+        </a>
         <button className="group/button relative inline-flex items-center justify-center overflow-hidden rounded-xl bg-black backdrop-blur-lg px-6 py-2 text-base text-white transition-all duration-300 ease-in-out hover:scale-105 active:scale-100 hover:shadow-xl hover:shadow-gray-600/50 border border-white/20">
           {isConnected ? (
             <span className="text-lg font-lexend" onClick={disconnect}>
