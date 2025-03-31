@@ -1,6 +1,5 @@
 import abi from "@/constants";
 import { useWriteContract, useAccount } from "wagmi";
-import { cn } from "@/lib/utils";
 
 export function SubmitPost({ postType }: { postType: number }) {
   const { isConnected } = useAccount();
