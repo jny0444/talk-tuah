@@ -1,7 +1,7 @@
 import { useChainId, useReadContract } from "wagmi";
 import { wagmiContractConfig } from "@/constants/wagmiConfig";
 
-function GetAllPosts() {
+function GetAllPosts({ postType }: { postType: number }) {
   const chainId = useChainId();
   console.log("Chain ID:", chainId);
 
@@ -13,7 +13,7 @@ function GetAllPosts() {
   } = useReadContract({
     ...wagmiContractConfig,
     functionName: "getAllPosts",
-    args: [],
+    args: [BigInt(postType)],
   });
 
   console.log("Posts data:", posts);

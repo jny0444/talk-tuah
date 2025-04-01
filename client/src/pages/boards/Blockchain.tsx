@@ -14,7 +14,7 @@ const Blockchain = () => {
         </h1>
         <SubmitPost postType={0} />
       </div>
-      <GetAllPosts />
+      <GetAllPosts postType={0}/>
     </div>
   );
 };

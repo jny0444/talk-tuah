@@ -12,7 +12,7 @@ const Shetposting = () => {
         </h1>
         <SubmitPost postType={1} />
       </div>
-      <GetAllPosts />
+      <GetAllPosts postType={1}/>
     </div>
   );
 };

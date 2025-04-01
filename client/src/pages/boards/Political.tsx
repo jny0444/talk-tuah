@@ -12,7 +12,7 @@ const Political = () => {
         </h1>
         <SubmitPost postType={2} />
       </div>
-      <GetAllPosts />
+      <GetAllPosts postType={2}/>
     </div>
   );
 };
